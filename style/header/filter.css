@@ -1,0 +1,293 @@
+/*????????? ------------------------- */
+.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.2);
+}
+
+.filter button,
+.filter a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.filter-title {
+    display: flex;
+    align-items: center;
+}
+
+.filter>*:first-child {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.filter>*:first-child>b::after {
+    content: ':';
+    display: none;
+}
+
+.filter form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    transition: .4s all;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.filter form ul {
+    flex-direction: inherit;
+    align-items: unset;
+    width: inherit;
+    height: 100%;
+}
+
+.filter-list ul {
+    display: block;
+    width: inherit;
+    height: fit-content;
+}
+
+.filter-list ul li {
+    width: 100%;
+    margin: 0;
+}
+
+.filter form ul li {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.filter>*:first-child, 
+.filter form li>button, 
+.filter #submit {
+    padding: 14px 24px;
+}
+
+.filter form ul li>button {
+    position: relative;
+}
+
+.filter form ul li>a {
+    padding: 16px 10px;
+}
+
+.filter form ul li>*:first-child:focus {
+    outline: 1px solid #000;
+}
+
+.filter form ul li>button:before {
+    content: '';
+    position: absolute;
+    background: url(https://i.postimg.cc/yNmycx7y/arrow-down-sign-to-navigate.png) no-repeat center;
+    background-size: cover;
+    transition: .2s transform;
+    width: 10px;
+    height: 10px;
+    transform: translateY(50%);
+    left: 6px;
+    bottom: 50%;
+}
+
+.filter form ul li>button[active="true"]::before {
+    transform: rotate(180deg);
+    transform-origin: center 70%;
+}
+
+.filter #submit {
+    background: #6cd015;
+    box-shadow: inset 0px 0px 10px rgb(0 0 0 / 10%);
+    text-transform: uppercase;
+    transition: .2s background;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.filter input[type="submit"]:hover {
+    background: rgb(255, 107, 53);
+}
+
+.filter form ul li>div {
+    background: #fff;
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.4);
+    transition: .2s height;
+    width: 100%;
+    height: fit-content;
+    overflow-y: hidden;
+}
+
+.filter form ul li>div>* {
+    height: fit-content;
+}
+
+.filter #inputPrice {
+    display: flex;
+    align-items: center;
+}
+
+.filter #selectPrice>div {
+    padding: 0 1em;
+}
+
+.filter .filter-range>button {
+    position: absolute;
+    background: rgb(240, 240, 240);
+    border-radius: 50%;
+    border: 1px solid;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 0%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.filter div#rangePrice {
+    position: relative;
+}
+
+.filter div.filter-range {
+    display: flex;
+    align-items: center;
+    height: 4px;
+}
+
+.filter input[type="range"] {
+    -webkit-appearance: none;
+    background: rgb(183, 183, 183);
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter input[type="range"]::-webkit-slider-thumb {
+    visibility: hidden;
+}
+
+.filter span#minValue,
+.filter span#maxValue {
+    position: absolute;
+    font-weight: 600;
+    top: -1.2em;
+    pointer-events: none;
+}
+
+.filter span#minValue {
+    left: 0;
+}
+
+.filter span#maxValue {
+    right: 0;
+}
+
+.filter button#left {
+    z-index: 1;
+}
+
+.filter button#right {
+    z-index: 2;
+}
+
+.filter button#left>#before,
+.filter button#right>#before {
+    content: '0$';
+    position: absolute;
+    background: orange;
+    text-shadow: 0.6px 0.6px 1px rgb(0, 0, 0);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+    color: #fff;
+    padding: 2px 2px 6px 2px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -2.2em;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.filter-wrapper>* {
+    padding: 12px 0;
+}
+
+.filter .filter-wrapper ul li {
+    height: fit-content;
+}
+
+.filter li#selectPrice .filter-wrapper>div>* {
+    padding: 10px 0;
+}
+
+.filter div#rangePrice {
+    margin-top: 1.4em;
+}
+
+.filter span>b {
+    display: flex;
+}
+
+.filter form ul li input[type="text"] {
+    box-shadow: 0px 2px 0px 0px rgb(0 0 0);
+    border-radius: 2px;
+    padding: 4px 4%;
+    margin: 0 4%;
+}
+
+.filter ul li label {
+    display: block;
+    position: relative;
+    padding: 8px 0 8px 22px;
+    margin-left: 16px;
+}
+
+.filter ul li input[type="radio"] {
+    width: 10px;
+    height: 10px;
+}
+
+.filter ul li input[type="radio"]+label::before,
+.filter ul li input[type="checkbox"]+label::before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.filter input[type="checkbox"],
+.filter input[type="radio"] {
+    display: none;
+}
+
+.filter input[type="radio"]:checked+label::before,
+.filter input[type="checkbox"]:checked+label::before {
+    background: url(https://i.postimg.cc/bJvSrwrJ/tick.png) center no-repeat, #0df689;
+    background-size: cover;
+    border: 2px solid #0df689;
+    animation: opacityCheckbox .3s linear;
+}
+
+@keyframes opacityCheckbox {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

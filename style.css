@@ -1,0 +1,188 @@
+/* * ------------ sidePanel ------------ */
+@import url("./style/sidePanel/sidePanelComp.css");
+@import url("./style/sidePanel/sidePanelMob.css");
+
+/* * ------------ header ------------ */
+@import url("./style/header/basket.css");
+@import url("./style/header/topPanel.css");
+@import url("./style/header/header.css");
+@import url("./style/header/filter.css");
+
+/* * ------------ main ------------ */
+@import url("./style/main/discounts.css");
+@import url("./style/main/comics.css");
+@import url("./style/main/delivery.css");
+@import url("./style/main/description.css");
+
+/* * ------------ footer ------------ */
+@import url("./style/footer/footer.css");
+
+/* * ------------ common ------------ */
+@import url("./style/common/fonts.css");
+@import url("./style/common/media.css");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+*::after,
+*::before {
+    pointer-events: none;
+}
+
+body {
+    background: url(https://i.postimg.cc/Yq5fhYQs/thumb-1920-251236.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: rgb(197, 197, 197);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+p,
+a,
+span,
+button,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="text"]::placeholder,
+h3 {
+    font: 100 14px 'FuturaPT-Medium', sans-serif;
+    color: #000;
+}
+
+h1,
+h2 {
+    font: 600 15px 'FuturaPT-Light', sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    display: block;
+    text-align: unset;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button>i {
+    pointer-events: none;
+}
+
+img {
+    display: block;
+    pointer-events: none;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.blackout {
+    position: fixed;
+    background: rgb(0, 0, 0, 0.2);
+    transition: .4s visibility, .4s opacity;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 14;
+}
+
+.pageContent {
+    display: flex;
+    max-width: 100%;
+    height: fit-content;
+}
+
+aside {
+    display: none;
+    position: sticky;
+    background: rgb(241, 241, 241);
+    box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.2);
+    width: 26%;
+    height: 100vh;
+    top: 0;
+}
+
+main {
+    padding: 0 3%;
+    overflow-x: hidden;
+}
+
+main>* {
+    margin-top: 20px;
+}
+
+.content {
+    background: #ffff;
+    width: 100%;
+}
+
+.content section a {
+    text-decoration: none;
+}
+
+.disabledArrow {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+/* * -------===== window =====------- */
+
+.activeWindow {
+    transform: translateX(0%) !important;
+    visibility: visible !important;
+}
+
+.activeFilter {
+    height: 255px !important;
+}
+
+.active {
+    display: block;
+}
+
+.noActive {
+    display: none;
+}
+
+/* * -------===== animation =====------- */
+
+.animationMovement {
+    position: absolute !important;
+    transform: translateX(0%);
+}
+
+.animatedOpening {
+    opacity: 1;
+    visibility: visible;
+}

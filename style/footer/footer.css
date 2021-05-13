@@ -1,0 +1,73 @@
+footer {
+    border-top: 2px solid;
+    margin: 0 2%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer>a {
+    max-width: 120px;
+    height: fit-content;
+    margin: 10px 0;
+}
+
+.footer>div {
+    margin: 6px 0;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul li {
+    position: relative;
+}
+
+.footer span {
+    display: block;
+}
+
+.footer ul li a {
+    display: block;
+    padding: 6px 24px;
+}
+
+.footer ul li:before {
+    content: '';
+    position: absolute;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    width: 16px;
+    height: 16px;
+    transform: translateY(50%);
+    bottom: 50%;
+    left: 0;
+}
+
+.footer ul li#facebook:before {
+    background: url(https://i.postimg.cc/VLg0ctDt/facebook.png);
+}
+
+.footer ul li#instagram:before {
+    background: url(https://i.postimg.cc/DzXzm4dB/instagram.png);
+}
+
+.footer ul li#twitter:before {
+    background: url(https://i.postimg.cc/tTJ2hyJS/twitter.png);
+}
+
+.footer ul li#comics:before {
+    background: url(https://i.postimg.cc/8cHR307J/comic.png);
+}
+
+.footer ul li#hero:before {
+    background: url(https://i.postimg.cc/26Bm2sXG/superhero.png);
+}

@@ -1,0 +1,161 @@
+header {
+    width: 100%;
+    padding: 0 2% 16px;
+}
+
+header section nav {
+    display: none;
+}
+
+header nav,
+header nav * {
+    height: 100%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header section:not(.filter) ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul li:first-child {
+    margin-left: 0;
+}
+
+header ul li i {
+    height: fit-content;
+}
+
+header form input {
+    width: 100%;
+}
+
+header form input[type="text"] {
+    padding: 8px 0 8px 16px;
+}
+
+header form input[type="text"]::placeholder {
+    color: rgb(102, 102, 102);
+}
+
+header h3 {
+    width: fit-content;
+    margin: 0 auto 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid;
+    height: 90px;
+    padding: 0 2%;
+}
+
+.header nav li a {
+    position: relative;
+}
+
+.header nav li a::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -20px;
+    transition: .4s visibility, .4s opacity, .4s background;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header a#linkComics::before {
+    background: url(https://i.postimg.cc/8cHR307J/comic.png);
+    background-size: cover;
+}
+
+.header a#linkDescrHeroes::before {
+    background: url(https://i.postimg.cc/26Bm2sXG/superhero.png);
+    background-size: cover;
+}
+
+.header nav li a:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header form button {
+    position: absolute;
+    display: block;
+    width: 56px;
+    height: 28px;
+    padding: 6px;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.header form button::before {
+    content: '';
+    position: absolute;
+    background: #000;
+    width: 1px;
+    height: 80%;
+    transform: translateY(50%);
+    bottom: 50%;
+    left: 0;
+}
+
+.header #logoLink {
+    display: none;
+    max-width: 120px;
+    height: fit-content;
+}
+
+.header #search {
+    max-width: 460px;
+    width: 100%;
+}
+
+.header #search form {
+    position: relative;
+}
+
+.header #search input {
+    border: 2px solid;
+    transition: .4s box-shadow;
+    border-radius: 30px;
+}
+
+.header #search input:focus {
+    box-shadow: 0px 0px 0px 1.2px rgb(0, 0, 0);
+}
+
+.header>* {
+    margin: 0 10px;
+}
+
+.header>*:first-child {
+    margin-left: 0;
+}
+
+.header>*:last-child {
+    margin-right: 0;
+}
+
+.header>button {
+    max-width: 35px;
+    height: 35px;
+}

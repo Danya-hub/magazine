@@ -1,0 +1,76 @@
+
+.sidePanel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.sidePanel-wrapper {
+    width: 100%;
+}
+
+.sidePanel-wrapper>div {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 8px 0;
+}
+
+.sidePanel-wrapper>div:last-child {
+    border-bottom: 0;
+}
+
+.sidePanel ul li {
+    position: relative;
+}
+
+.sidePanel ul li a {
+    text-decoration: unset;
+}
+
+.sidePanel ul li a:active {
+    text-decoration: underline;
+}
+
+.sidePanel ul li a::before {
+    content: '';
+    position: absolute;
+    background: #000;
+    transition: opacity 0.2s;
+    width: 8px;
+    height: 1px;
+    transform: translateY(50%);
+    bottom: 50%;
+    left: 8px;
+    opacity: 0;
+}
+
+.sidePanel ul li>* {
+    padding: 4px 0 4px 6px;
+    transition: padding 0.3s;
+    cursor: pointer;
+}
+
+#schedule ul li {
+    display: flex;
+}
+
+#schedule ul li span {
+    cursor: unset;
+}
+
+.sidePanel ul li a:hover::before {
+    opacity: 1;
+}
+
+.sidePanel ul li a:hover {
+    padding: 4px 0 4px 20px;
+}
+
+.sidePanel h2 {
+    padding: 4px 0 4px 6px;
+}
+
+.sidePanel ul li>* {
+    display: block;
+    width: 100%;
+}

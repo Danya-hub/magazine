@@ -1,0 +1,19 @@
+@font-face {
+    src: url(../../fonts/FuturaPT-Bold.ttf);
+    font-family: 'FuturaPT-Bold';
+}
+
+@font-face {
+    src: url(../../fonts/FuturaPT-Medium.ttf);
+    font-family: 'FuturaPT-Medium';
+}
+
+@font-face {
+    src: url(../../fonts/FuturaPT-Light.ttf);
+    font-family: 'FuturaPT-Light';
+}
+
+@font-face {
+    src: url(../../fonts/FjallaOne-Regular.ttf);
+    font-family: 'FjallaOne-Regular';
+}

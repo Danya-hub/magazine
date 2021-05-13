@@ -1,0 +1,86 @@
+.topHeader {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid;
+    padding: 20px 7%;
+}
+
+.topHeader span {
+    display: block;
+}
+
+.topHeader #functions li>*:hover img {
+    animation: animationRotate .4s linear;
+}
+
+@keyframes animationRotate {
+    0% {
+        transform: rotate(0px);
+    }
+    
+    33% {
+        transform: rotate(-25deg);
+    }
+    
+    66% {
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.topHeader #functions li *>div {
+    width: 16px;
+    height: 16px;
+    margin: 0 auto 7px;
+}
+
+.topHeader #socialNetWorks a {
+    transition: .4s transform, .4s color, .4s box-shadow, .4s background;
+}
+
+.topHeader #socialNetWorks li {
+    height: 30px;
+    width: 30px;
+}
+
+.topHeader #socialNetWorks a {
+    background: #ffff;
+    box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
+    border-radius: 50%;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+}
+
+.topHeader #socialNetWorks a:hover {
+    box-shadow: 0px 0px 4px 2px rgb(0, 0, 0, 0.1);
+    transform: scale(1.2);
+}
+
+.topHeader #socialNetWorks a:hover i {
+    color: #ffff;
+}
+
+.topHeader #facebook:hover {
+    background: #3b5998;
+}
+
+.topHeader #instagram:hover {
+    background: #F56040;
+}
+
+.topHeader #twitter:hover {
+    background: #1DA1F2;
+}
+
+.topHeader #topHeader-basket>div {
+    position: relative;
+}
+
+.header #header-basket {
+    position: relative;
+}

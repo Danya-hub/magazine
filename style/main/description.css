@@ -1,0 +1,111 @@
+.description>div {
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 20px 0;
+}
+
+.description .description-contentDescr {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 14px;
+}
+
+.description .description-text {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.deliveryInfo .description-image {
+    max-width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.description h2 {
+    font-size: 16px;
+}
+
+.description .description-text p {
+    margin: 4px 0;
+}
+
+.description a {
+    display: block;
+    position: relative;
+    background: #ffff;
+    border: 2px solid #000;
+    transition: .4s background;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+}
+
+.description a:hover {
+    background: rgb(226, 226, 226);
+}
+
+.description span {
+    display: block;
+    color: #767676;
+}
+
+.description ul li {
+    padding: 0 22px;
+}
+
+.heroInfo .description-image {
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    height: 280px;
+}
+
+.heroInfo .description-image:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.heroInfo>div:nth-child(1) .description-image:before {
+    background-color: #d42127;
+}
+
+.heroInfo>div:nth-child(2) .description-image:before {
+    background-color: #03a9f5;
+}
+
+.heroInfo>div:nth-child(3) .description-image:before {
+    background-color: #41a543;
+}
+
+.heroInfo>div:nth-child(4) .description-image:before {
+    background-color: #424242;
+}
+
+.heroInfo>div:nth-child(5) .description-image:before {
+    background-color: #252ab9;
+}
+
+.heroInfo>div:nth-child(odd) .description-image:before {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.heroInfo>div:nth-child(even) .description-image:before {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.heroInfo>div:nth-child(odd) .description-image img {
+    transform: translateX(36%);
+    right: 50%;
+}
+
+.heroInfo>div:nth-child(even) .description-image img {
+    right: -1.4em;
+}
+
+.heroInfo img {
+    position: absolute;
+    width: auto;
+}

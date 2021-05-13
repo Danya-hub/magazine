@@ -1,0 +1,193 @@
+#magazine>div {
+    margin-bottom: 10px;
+}
+
+#magazine>div>div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+#magazine>div>div:first-child img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.magazine-galleryComics {
+    position: relative;
+    height: 270px;
+    margin: 16px 0;
+}
+
+.magazine-galleryComics-button {
+    position: absolute;
+    min-width: 30px;
+    min-height: 30px;
+    height: 100%;
+    transition: .2s opacity;
+    transform: translateY(50%);
+    background-size: contain !important;
+    bottom: 50%;
+    margin: 0 6px;
+    z-index: 10;
+}
+
+.magazine-galleryComics-button.prev {
+    background: url(https://i.postimg.cc/027KvRMK/prev.png) center no-repeat;
+    left: 0;
+}
+
+.magazine-galleryComics-button.next {
+    background: url(https://i.postimg.cc/76CbQpr6/next.png) center no-repeat;
+    right: 0;
+}
+
+.magazine-galleryComics-wrapper,
+div#wrapperForActiveSlides {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.magazine-galleryComics-wrapper {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    overflow: hidden;
+}
+
+div#wrapperForActiveSlides {
+    width: fit-content;
+    transform: translateX(0%);
+}
+
+.magazine-galleryComics-imgComics {
+    transition: .4s transform;
+    max-width: 184px;
+    width: 100vw;
+    height: 96%;
+    padding: 0 14px;
+}
+
+.magazine-galleryComics-imgComics>div { 
+    position: relative;
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.4);
+    border-radius: 12px;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.magazine-galleryComics-imgComics:hover {
+    transform: scale(1.03);
+}
+
+.magazine-btnMoreInfo {
+    display: block;
+    background: transparent;
+    border: 2px solid #000;
+    transition: .4s background;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 10px auto 0;
+}
+
+.magazine-btnMoreInfo:hover {
+    background: rgb(226, 226, 226);
+}
+
+#magazine .magazine-galleryComics-imgComics>div>* {
+    position: absolute;
+}
+
+#magazine .magazine-galleryComics-bottomPanel {
+    background: #fff;
+    width: 100%;
+    height: fit-content;
+}
+
+#magazine .magazine-galleryComics-bottomPanel {
+    padding: 4px 10px;
+    bottom: 0;
+}
+
+#magazine .magazine-galleryComics-bottomPanel>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#magazine .magazine-galleryComics-index {
+    transform: translate(50%, 50%);
+    width: fit-content;
+    height: fit-content;
+    right: 50%;
+    bottom: 50%;
+    left: unset;
+    z-index: 5;
+}
+
+.magazine-galleryComics-imgComics button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6cd015;
+    transition: .4s background, .4s color;
+    border-radius: 6px;
+    width: 36px;
+    height: 30px;
+}
+
+.magazine-galleryComics-imgComics button:hover {
+    background: rgb(255, 107, 53);
+    color: #fff;
+}
+
+#magazine>div:nth-child(1) .magazine-galleryComics-imgComics img {
+    background: linear-gradient(56deg, #dd0000 50%, #b10000 50%);
+}
+
+#magazine>div:nth-child(2) .magazine-galleryComics-imgComics img {
+    background: linear-gradient(56deg, #49b9ff 50%, #1DA1F2 50%);
+}
+
+#magazine>div:nth-child(3) .magazine-galleryComics-imgComics img {
+    background: linear-gradient(56deg, #00cc00 50%, #02b302 50%);
+}
+
+#magazine>div:nth-child(4) .magazine-galleryComics-imgComics img {
+    background: linear-gradient(56deg, #9b9b9b 50%, #808080 50%);
+}
+
+#magazine>div:nth-child(5) .magazine-galleryComics-imgComics img {
+    background: linear-gradient(56deg, #5774b3 50%, #3b5998 50%);
+}
+
+.move {
+    animation: movement 1s linear;
+}
+
+@keyframes movement {
+    0% {
+        right: 50%;
+    }
+
+    100% {
+        right: 75%;
+    }
+}
+
+.activeCard {
+    visibility: visible;
+    pointer-events: unset;
+}
+
+.noActiveCard {
+    position: absolute !important;
+    visibility: hidden;
+}

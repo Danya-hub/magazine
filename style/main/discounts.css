@@ -1,0 +1,51 @@
+.galleryComics {
+    position: relative;
+    box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: 42vh;
+}
+
+.galleryComics-imgComics {
+    position: absolute;
+    transition: 0.6s visibility, 0.6s opacity;
+    width: 100%;
+    height: 100%;
+}
+
+.galleryComics-imgComics a,
+.galleryComics-imgComics div {
+    width: 100%;
+    height: 100%;
+    background-position: 5% 42%;
+    outline: none;
+}
+
+.galleryComics-imgComics div {
+    background-position: left top 42% !important;
+    background-size: 186% !important;
+    background-repeat: no-repeat !important;
+}
+
+.galleryComics>div:nth-child(1) div {
+    background: url(https://i.postimg.cc/3wXJBkJt/iron-Man-Slider.jpg);
+}
+
+.galleryComics>div:nth-child(2) div {
+    background: url(https://i.postimg.cc/RhDMFfXZ/spider-Man-Slider.jpg);
+}
+
+.galleryComics>div:nth-child(3) div {
+    background: url(https://i.postimg.cc/cCMbkN8y/hulk-Slider.jpg);
+}
+
+.galleryComics>div:nth-child(4) div {
+    background: url(https://i.postimg.cc/ZKv9NK3M/thor-Slider.jpg);
+}
+
+.galleryComics>div:nth-child(5) div {
+    background: url(https://i.postimg.cc/fbzT8wtZ/capitan-America-Slider.jpg);
+}
+
+.discountPanel {
+    box-shadow: 0px 0px 4px rgb(0, 0,0, 0.2);
+}

@@ -1,0 +1,20 @@
+.pageDelivery main ul li {
+    position: relative;
+}
+
+.pageDelivery main ul li::before {
+    content: '';
+    position: absolute;
+    background: #000;
+    width: 8px;
+    height: 1px;
+    left: 6px;
+    transform: translateY(50%);
+    bottom: 50%;
+}
+
+.pageDelivery .links ul li a {
+    display: block;
+    padding: 4px 22px;
+    width: 100%;
+}
