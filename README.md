@@ -1,1 +1,1 @@
-# magazineComics
+# magazine
