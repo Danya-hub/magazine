@@ -1,21 +1,25 @@
 export const objOfGroupForBinding = {
     mainPage: {
-        button: `
-            <button type="button" id="openBtn">
-                <img src="https://i.postimg.cc/2yT4LY52/menu.png" alt="basket">
-            </button>
-        `,
+        button: {
+            openButton: `
+                <button type="button" id="openBtn">
+                    <img src="https://i.postimg.cc/2yT4LY52/menu.png" alt="basket">
+                </button>
+            `,
+            closeButton: `
+                <button type="button" id="closeBtn">
+                    <img src="https://i.postimg.cc/FH8D4wHw/close.png" alt="imgBtn" class="navFunctionsList-closeBtn-img">
+                </button>
+            `,
+        },
         window: {
             mobVersion: `
-                <div>
+                <div id="headerWindow">
                     <a href="#" class="navFunctionsList-logoLink">
                         <img src="https://i.postimg.cc/LX4sFV8g/logo.png" alt="logo">
                     </a>
-                    <button type="button" id="closeBtn">
-                        <img src="https://i.postimg.cc/FH8D4wHw/close.png" alt="imgBtn" class="navFunctionsList-closeBtn-img">
-                    </button>
                 </div>
-                <div>
+                <div id="navigation">
                     <ul class="navFunctionsList-functions">
                         <li id="login">
                             <button>Войти</button>
