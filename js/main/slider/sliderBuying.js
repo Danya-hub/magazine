@@ -1,6 +1,6 @@
 import {
-    objForBuyingComics
-} from "./../../../data/objForBuyingComics.js";
+    objToBuyComics
+} from "./../../../data/objToBuyComics.js";
 
 const style = {
     keyframeForAnimation: function (value) {
@@ -288,8 +288,8 @@ function getSlideFromJson(jsonData) {
 const sliderForBuying = () => {
     const sliders = [];
 
-    for (let key in objForBuyingComics) {
-        if (!objForBuyingComics.hasOwnProperty(key)) {
+    for (let key in objToBuyComics) {
+        if (!objToBuyComics.hasOwnProperty(key)) {
             continue;
         }
 
@@ -299,7 +299,7 @@ const sliderForBuying = () => {
             return
         }
         
-        const slides = getSlideFromJson(objForBuyingComics[key]);
+        const slides = getSlideFromJson(objToBuyComics[key]);
         sliders.push(new Slider(element, slides));
     }
 }

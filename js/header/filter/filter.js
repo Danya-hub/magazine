@@ -1,13 +1,13 @@
 import selectPrice from "./selectPrice.js";
 import appearingPages from "./appearingPages.js";
 import {
-    objForBuyingComics
-} from "./../../../data/objForBuyingComics.js";
+    objToBuyComics
+} from "./../../../data/objToBuyComics.js";
 
 const filter = () => {
     function _into() {
-        appearingPages(objForBuyingComics);
-        selectPrice(objForBuyingComics);
+        appearingPages(objToBuyComics);
+        selectPrice(objToBuyComics);
 
         _setIndexForEachChildElem(document.querySelectorAll('.filter-listItems'));
         _setListenerForEachChildElemToClick(

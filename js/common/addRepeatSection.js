@@ -1,6 +1,6 @@
 import {
     objectSections
-} from "../../data/repeatSections.js";
+} from "../../data/objRepeatSections.js";
 import {
     objOfInfoAboutSections
 } from "./../../js/common/activeRepeatingSections.js";

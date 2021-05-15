@@ -1,6 +1,6 @@
 import {
     objectSections
-} from "../../../data/repeatSections.js";
+} from "../../../data/objRepeatSections.js";
 
 const basket = () => {
     let objDataAboutProducts = [];

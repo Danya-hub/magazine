@@ -1,6 +1,6 @@
 import {
     infoAboutEachHeroes
-} from "./../../data/textForDescriptionHeroes.js";
+} from "./../../data/objDescriptionHeroes.js";
 
 const addDescriptHeroes = () => {
     const evidence = {

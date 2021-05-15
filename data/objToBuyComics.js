@@ -1,4 +1,4 @@
-export const objForBuyingComics = {
+export const objToBuyComics = {
     ironMan: [
         //* 1
         {
@@ -1152,8 +1152,8 @@ export const objForBuyingComics = {
 }
 
 function randomNumForPrice() {
-    for (const key in objForBuyingComics) {
-        objForBuyingComics[key].forEach(e => {
+    for (const key in objToBuyComics) {
+        objToBuyComics[key].forEach(e => {
             e.price = Math.round(Math.random() * 100) + 2;
             e.page = Math.round(Math.random() * 120) + 2;
         });
