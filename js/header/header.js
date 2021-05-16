@@ -10,7 +10,6 @@ const header = (objOfActiveSection) => {
     
         for (let i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener('click', (e) => {
-                console.log(buttons);
                 let parentElem = e.currentTarget.parentNode;
                 let id = e.currentTarget.id;
 

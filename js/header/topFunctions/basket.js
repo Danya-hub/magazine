@@ -1,8 +1,4 @@
-import {
-    objectSections
-} from "../../../data/objRepeatSections.js";
-
-const basket = () => {
+const basket = (windowBasket) => {
     let objDataAboutProducts = [];
 
     function __init__() {
@@ -205,7 +201,7 @@ const basket = () => {
 
         countQuantityProducts.forEach(e => {
             if (compareOfNumbers(e.textContent, 0, '=')) {
-                parentElem.innerHTML = objectSections.windowBasket;
+                parentElem.innerHTML = windowBasket;
                 wrapper = parentElem.querySelector('.windowBasket-wrapper');
                 wrapper.classList.add('empty');
                 wrapper.innerHTML = blankForEmptyBasket();

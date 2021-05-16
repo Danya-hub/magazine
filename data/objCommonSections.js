@@ -1,4 +1,4 @@
-export let objOfInfoAboutSections = {};
+export let objCommonSections = {};
 
 function _setELemInObj() {
     Array(...arguments).forEach(e => {
@@ -9,7 +9,7 @@ function _setELemInObj() {
         }
 
         let section = _elem.classList.value == '' ? _elem.tagName.toLowerCase() : _elem.className;
-        objOfInfoAboutSections[section] = _elem;
+        objCommonSections[section] = _elem;
     });
 }
 
@@ -18,7 +18,6 @@ _setELemInObj(
     '.topHeader',
     '.filter',
     'footer',
-    // '.sidePanel',
-    // '.navFunctionsList',
+    '.navFunctionsList',
     '.windowBasket',
 )

@@ -1,14 +1,13 @@
 import {
-    objectSections
-} from "../../data/objRepeatSections.js";
+    modelsOfSections
+} from "../../data/objModelsForSections.js";
 import {
-    objOfInfoAboutSections
-} from "./../../js/common/activeRepeatingSections.js";
+    objCommonSections
+} from "../../data/objCommonSections.js";
 
 const addRepeatSection = () => {
-    
     function __init__() {
-        _appendElem(objOfInfoAboutSections);
+        _appendElem(objCommonSections);
     }
 
     function _appendElem(obj) {
@@ -17,7 +16,7 @@ const addRepeatSection = () => {
                 return
             }
 
-            obj[key].innerHTML = objectSections[key];
+            obj[key].innerHTML = modelsOfSections[key];
         }
     }
 
