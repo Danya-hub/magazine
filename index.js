@@ -6,7 +6,7 @@ import {
 
 import {
     modelsOfSections
-} from "../../../data/objModelsForSections.js";
+} from "./data/objModelsForSections.js";
 
 //* ------------ header ------------
 import basket from "./js/header/topFunctions/basket.js";
