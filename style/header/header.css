@@ -57,6 +57,10 @@ header h3 {
     margin: 0 auto 10px;
 }
 
+header a:hover {
+    text-decoration: none;
+}
+
 .header {
     display: flex;
     justify-content: space-between;

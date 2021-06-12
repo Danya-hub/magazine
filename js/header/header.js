@@ -20,10 +20,6 @@ const header = (objOfActiveSection) => {
                             _openWindow(blackout, 'animatedOpening');
                             body.style.overflowY = 'hidden';
                         }
-
-                        if (_hasElementClass(document.querySelector('.navFunctionsList'), 'activeFilter')) {
-                            _closeWindow(document.querySelector('.navFunctionsList'), 'activeFilter');
-                        }
                         break;
 
                     case 'closeBtn':
@@ -36,12 +32,7 @@ const header = (objOfActiveSection) => {
 
                     case 'filterButton':
                         let form = parentElem.querySelector('#filterForm');
-
-                        if (parseInt(form.style.height) == 0) {
-                            _setHeightForElem(form, heigthOfFilter);
-                        } else {
-                            _setHeightForElem(form, 0);
-                        }
+                        parseInt(form.style.height) == 0 ? _setHeightForElem(form, heigthOfFilter) : _setHeightForElem(form, 0);
                         break;
 
                     case 'openBasket':

@@ -120,7 +120,7 @@
 }
 
 @media (min-width: 1024px) {
-    .pageContent {
+    .pageWrapper {
         margin-right: 12%; /* ! */ 
     } 
 

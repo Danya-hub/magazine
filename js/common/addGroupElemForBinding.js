@@ -8,7 +8,7 @@ class Add {
     }
 
     __init__() {
-        this.page = document.querySelector('.pageContent');
+        this.page = document.querySelector('.pageWrapper');
         this.window = objOfGroupForBinding[this.page.classList[1]];
     }
 

@@ -21,6 +21,10 @@
 @import url("./style/common/fonts.css");
 @import url("./style/common/media.css");
 
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *::after,
 *::before {
@@ -74,6 +78,14 @@ h1 {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 button,
 input[type="button"],
 input[type="submit"] {
@@ -117,7 +129,7 @@ input {
     z-index: 14;
 }
 
-.pageContent {
+.pageWrapper {
     display: flex;
     max-width: 100%;
     height: fit-content;
@@ -138,17 +150,13 @@ main {
     overflow-x: hidden;
 }
 
-main>* {
+.pageContent>* {
     margin-top: 20px;
 }
 
 .content {
     background: #ffff;
     width: 100%;
-}
-
-.content section a {
-    text-decoration: none;
 }
 
 .disabledArrow {
@@ -161,10 +169,6 @@ main>* {
 .activeWindow {
     transform: translateX(0%) !important;
     visibility: visible !important;
-}
-
-.activeFilter {
-    height: 255px !important;
 }
 
 .active {

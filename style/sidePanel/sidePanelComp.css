@@ -27,10 +27,6 @@
     text-decoration: unset;
 }
 
-.sidePanel ul li a:active {
-    text-decoration: underline;
-}
-
 .sidePanel ul li a::before {
     content: '';
     position: absolute;

@@ -8,6 +8,10 @@ import {
     modelsOfSections
 } from "./data/objModelsForSections.js";
 
+import {
+    objOfDeliveryContent
+} from "./../../data/objOfDeliveryContent.js";
+
 //* ------------ header ------------
 import basket from "./js/header/topFunctions/basket.js";
 import navigation from "./js/header/topFunctions/navigation.js";
@@ -18,6 +22,7 @@ import header from "./js/header/header.js";
 import actionSlider from "./js/main/slider/actionSlider.js";
 import sliderForBuying from "./js/main/slider/sliderBuying.js";
 import addDescriptHeroes from "./js/main/addDescriptHeroes.js";
+import switchingLinksOfNav from "./js/main/switchingLinksOfNav.js";
 
 //* ------------ common ------------ 
 import addRepeatSection from "./js/common/addCommonSection.js";
@@ -35,13 +40,18 @@ addGroupElemForBinding();
 //* 2)
 _hasElemInHTML('.galleryComics') ? actionSlider() : null;
 _hasElemInHTML('.heroInfo') ? addDescriptHeroes() : null;
+_hasElemInHTML('.pageDelivery') ? switchingLinksOfNav(
+    document.querySelectorAll('#help'), 
+    document.getElementById('delivery'), 
+    objOfDeliveryContent,
+) : null;
 _hasElemInHTML('windowBasket') ? sliderForBuying() : null;
 _hasElemInHTML('windowBasket') ? basket(modelsOfSections.windowBasket) : null;
 
 //* 3)
 _hasElemInHTML('filter') ? filter() : null;
 _hasElemInHTML('header') ? header(objCommonSections) : null;
-_hasElemInHTML('navFunctionsList') ? navigation() : null; //! document.querySelector('.pageContent').classList.add('noActiveNav')
+_hasElemInHTML('navFunctionsList') ? navigation() : null; //! document.querySelector('.pageWrapper').classList.add('noActiveNav')
 
 //* 4)
 _hasElemInHTML('filter') ? media(objCommonSections) : null;

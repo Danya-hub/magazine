@@ -122,22 +122,25 @@ export const objOfGroupForBinding = {
     },
     pageDelivery: {
         mobVersion: `
-            <nav>
+            <nav id="help">
                 <ul>
                     <li>
-                        <a href="#">Как забрать товар в магазине?</a>
+                        <a href="#" id="methDelivOrd">Способ доставки</a>
                     </li>
                     <li>
-                        <a href="#">Как оформить заказ? !!</a>
+                        <a href="#" id="arranOrd">Как оформить заказ?</a>
                     </li>
                     <li>
-                        <a href="#">Сколько стоит доставка?</a>
+                        <a href="#" id="pickupOrd">Как забрать товар в магазине?</a>
                     </li>
                     <li>
-                        <a href="#">Какими способами можно оплатить товар?</a>
+                        <a href="#" id="costOrd">Сколько стоит доставка?</a>
                     </li>
                     <li>
-                        <a href="#">Проверка отправлений</a>
+                        <a href="#" id="metPayOrd">Какими способами можно оплатить товар?</a>
+                    </li>
+                    <li>
+                        <a href="#" id="chSendOrd">Проверка отправлений</a>
                     </li>
                 </ul>
             </nav>
@@ -145,22 +148,25 @@ export const objOfGroupForBinding = {
         compVersion: `
             <section class="sidePanel">
                 <h2>Помощь: </h2>
-                <nav>
+                <nav id="help">
                     <ul>
                         <li>
-                            <a href="#">Как забрать товар в магазине?</a>
+                            <a href="#" id="methDelivOrd">Способ доставки</a>
                         </li>
                         <li>
-                            <a href="#">Как оформить заказ? !!</a>
+                            <a href="#" id="arranOrd">Как оформить заказ?</a>
                         </li>
                         <li>
-                            <a href="#">Сколько стоит доставка?</a>
+                            <a href="#" id="pickupOrd">Как забрать товар в магазине?</a>
                         </li>
                         <li>
-                            <a href="#">Какими способами можно оплатить товар?</a>
+                            <a href="#" id="costOrd">Сколько стоит доставка?</a>
                         </li>
                         <li>
-                            <a href="#">Проверка отправлений</a>
+                            <a href="#" id="metPayOrd">Какими способами можно оплатить товар?</a>
+                        </li>
+                        <li>
+                            <a href="#" id="chSendOrd">Проверка отправлений</a>
                         </li>
                     </ul>
                 </nav>

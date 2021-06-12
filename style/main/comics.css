@@ -79,7 +79,7 @@ div#wrapperForActiveSlides {
     width: 100%;
     height: inherit;
     overflow: hidden;
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 .magazine-galleryComics-imgComics:hover {

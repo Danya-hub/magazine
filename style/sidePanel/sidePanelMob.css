@@ -31,7 +31,7 @@
     cursor: pointer;
 }
 
-.navFunctionsList>div:nth-child(2) {
+.navFunctionsList #navigation {
     padding-bottom: 20px;
     height: 100%;
     overflow-y: scroll;
@@ -54,10 +54,6 @@
 
 .navFunctionsList ul li a {
     text-decoration: unset;
-}
-
-.navFunctionsList ul li a:active {
-    text-decoration: underline;
 }
 
 .navFunctionsList #comic::before {
