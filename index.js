@@ -10,7 +10,7 @@ import {
 
 import {
     objOfDeliveryContent
-} from "./../../data/objOfDeliveryContent.js";
+} from "./data/objOfDeliveryContent.js";
 
 //* ------------ header ------------
 import basket from "./js/header/topFunctions/basket.js";

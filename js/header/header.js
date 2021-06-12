@@ -3,7 +3,7 @@ const header = (objOfActiveSection) => {
 
     function __init__() {
         const blackout = document.querySelector('.blackout');
-        const body = document.querySelector('body');
+
         let heigthOfFilter = 0;
         buttons.push(..._getElemFromParentElem('button'));
         Object.values(objOfActiveSection).find(e => e.className == 'filter' ? heigthOfFilter = disableFilter(e) : null);
@@ -18,7 +18,7 @@ const header = (objOfActiveSection) => {
                         if (!_hasElementClass(document.querySelector('.navFunctionsList'), 'activeWindow')) {
                             _openWindow(document.querySelector('.navFunctionsList'), 'activeWindow');
                             _openWindow(blackout, 'animatedOpening');
-                            body.style.overflowY = 'hidden';
+                            document.body.style.overflowY = 'hidden';
                         }
                         break;
 
@@ -26,7 +26,7 @@ const header = (objOfActiveSection) => {
                         if (_hasElementClass(document.querySelector('.navFunctionsList'), 'activeWindow')) {
                             _closeWindow(document.querySelector('.navFunctionsList'), 'activeWindow');
                             _closeWindow(blackout, 'animatedOpening');
-                            body.style.overflowY = 'visible';
+                            document.body.style.overflowY = 'visible';
                         }
                         break;
 
@@ -39,7 +39,7 @@ const header = (objOfActiveSection) => {
                         if (!_hasElementClass(objOfActiveSection.windowBasket, 'activeWindow')) {
                             _openWindow(objOfActiveSection.windowBasket, 'activeWindow');
                             _openWindow(blackout, 'animatedOpening');
-                            body.style.overflowY = 'hidden';
+                            document.body.style.overflowY = 'hidden';
                         }
                         break;
 
@@ -47,7 +47,7 @@ const header = (objOfActiveSection) => {
                         if (_hasElementClass(objOfActiveSection.windowBasket, 'activeWindow')) {
                             _closeWindow(objOfActiveSection.windowBasket, 'activeWindow');
                             _closeWindow(blackout, 'animatedOpening');
-                            body.style.overflowY = 'visible';
+                            document.body.style.overflowY = 'visible';
                         }
                         break;
 
