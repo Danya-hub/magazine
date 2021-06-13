@@ -13,7 +13,7 @@
     bottom: 50%;
 }
 
-.pageDelivery .links ul li a {
+.pageDelivery main ul li>* {
     display: block;
     padding: 4px 22px;
     width: 100%;

@@ -1,0 +1,27 @@
+.cardContent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cardContent span,
+.cardContent a {
+    display: block;
+    text-align: center;
+}
+
+.cardContent i {
+    padding-right: 4px;
+}
+
+.cardContent .card {
+    background: rgb(241, 241, 241);
+    max-width: 200px;
+    height: 100%;
+    padding: 14px;
+    margin: 10px 20px;
+}
+
+.cardContent .card>* {
+    padding: 4px 0;
+}

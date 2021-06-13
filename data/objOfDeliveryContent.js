@@ -1,7 +1,7 @@
 export const objOfDeliveryContent = {
     methDelivOrd: `
         <a href="#" class="discountPanel">
-            <img src="https://i.postimg.cc/gJTHVgRZ/delivery.png" alt="discount">
+            <img src="https://i.postimg.cc/vTxrVfzb/discount-Del.png" alt="discount">
         </a>
         <section class="links">
             <h2>Способы доставки: </h2>
@@ -105,5 +105,48 @@ export const objOfDeliveryContent = {
                 </div>
             </div>
         </section>
+    `,
+    arranOrd: `
+        <h1>Как оформить заказ?</h1>
+        <p>Оформить заказ на сайте magazine.com вы можете круглосуточно.
+            При оформлении покупки укажите желаемый способ доставки товара: 
+            самовывоз или курьер, службой доставки «Новая почта», 
+            а также удобную для вас форму оплаты. Если вы оформили заказ 
+            с 9:00, мы свяжемся с вами в течение дня. Если вы оформили 
+            заказ после 20:00, мы свяжемся с вами на следующий день до 
+            12:00.</p>
+        <h2>Прием заказов осуществляется по телефонам:</h2>
+        <div class="cardContent">
+            <div class="card">
+                <a href="tel: +380 *** ** **">
+                    <i class="fas fa-phone-alt"></i>+380 *** ** **
+                </a>
+                <span>Киев</span>
+            </div>
+            <div class="card">
+                <a href="tel: +380 *** ** **">
+                    <i class="fas fa-phone-alt"></i>+380 *** ** **
+                </a>
+                <span>Украина</span>
+            </div>
+            <div class="card">
+                <a href="tel: +380 *** ** **">
+                    <i class="fas fa-phone-alt"></i>+380 *** ** **
+                </a>
+                <span>Днепр</span>
+            </div>
+        </div>
+        <h2>График работы call-центра:</h2>
+        <ul id="schedule">
+            <li>
+                <span>В будние: с 00:00 до 00:00</span>
+            </li>
+            <li>
+                <span>Суббота: с 00:00 до 00:00</span>
+            </li>
+            <li>
+                <span>Воскресенье: с 00:00 до 00:00</span>
+            </li>
+        </ul>
     `,
 }

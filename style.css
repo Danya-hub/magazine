@@ -13,6 +13,7 @@
 @import url("./style/main/comics.css");
 @import url("./style/main/delivery.css");
 @import url("./style/main/description.css");
+@import url("./style/main/cardContent.css");
 
 /* * ------------ footer ------------ */
 @import url("./style/footer/footer.css");
@@ -148,6 +149,11 @@ aside {
 main {
     padding: 0 3%;
     overflow-x: hidden;
+}
+
+footer {
+    border-top: 2px solid;
+    margin: 16px 2% 0;
 }
 
 .pageContent>* {
