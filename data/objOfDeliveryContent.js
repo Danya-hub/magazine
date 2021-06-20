@@ -87,9 +87,7 @@ export const objOfDeliveryContent = {
                                     13:30</p>
                             </li>
                             <li>
-                                <p>Если заказ оформпен с 12:00-14:00 - получить возможно в пункте выдачи
-                                    после
-                                    15:30<p>
+                                <p>Если заказ оформлен с 12:00-14:00 - получить возможно в пункте выдачи после 15:30</p>
                             </li>
                             <li>
                                 <p>Если заказ оформлен с 14:00-15:00 - получить возможно в пункте выдәчи
@@ -121,19 +119,19 @@ export const objOfDeliveryContent = {
                 <a href="tel: +380 *** ** **">
                     <i class="fas fa-phone-alt"></i>+380 *** ** **
                 </a>
-                <span>Киев</span>
+                <span>г.****</span>
             </div>
             <div class="card">
                 <a href="tel: +380 *** ** **">
                     <i class="fas fa-phone-alt"></i>+380 *** ** **
                 </a>
-                <span>Украина</span>
+                <span>г.****</span>
             </div>
             <div class="card">
                 <a href="tel: +380 *** ** **">
                     <i class="fas fa-phone-alt"></i>+380 *** ** **
                 </a>
-                <span>Днепр</span>
+                <span>г.****</span>
             </div>
         </div>
         <h2>График работы call-центра:</h2>
@@ -149,4 +147,78 @@ export const objOfDeliveryContent = {
             </li>
         </ul>
     `,
+    costOrd: `
+        <table>
+            <tr>
+                <td>
+                    <h3>Способ оплаты:</h3>
+                </td>
+                <td>
+                    <h3>Город:</h3>
+                </td>
+                <td>
+                    <h3>Цены:</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Новая почта</span>
+                </td>
+                <td>
+                    <span>***</span>
+                </td>
+                <td>
+                    <span>мин. 50 грн.</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Курьерская доставка</span>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <span>Киев</span>
+                        </li>
+                        <li>
+                            <span>Пуща-Водица, Софиевская Борщаговка, Петропавловская Борщаговкая, Чайка, Вишневое</span>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <span>70 грн.</span>
+                        </li>
+                        <li>
+                            <span>100 грн.</span>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>  
+    `,
+    metPayOrd: `
+        <h1>Способы оплаты:</h1>
+        <div class="cardContent">
+            <div class="card">
+                <div class="image">
+                    <img src="https://i.postimg.cc/nrtzGhRd/1200px-Mastercard-2019-logo-svg.png" alt="masterCard">
+                    </div>
+                    <span>MasterCard</span>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="https://i.postimg.cc/j2Xs6QJ5/1-24.png" alt="visa">
+                    </div>
+                    <span>Visa</span>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="https://i.postimg.cc/wTMKbdCF/loan.png" alt="cashPayment">
+                    </div>
+                    <span>Наличными</span>
+            </div>
+        </div>
+    `, 
 }

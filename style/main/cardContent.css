@@ -25,3 +25,8 @@
 .cardContent .card>* {
     padding: 4px 0;
 }
+
+.cardContent .image {
+    width: 100px;
+    height: 80px;
+} 
