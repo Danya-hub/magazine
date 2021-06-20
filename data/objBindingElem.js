@@ -125,7 +125,7 @@ export const objOfGroupForBinding = {
             <nav id="help">
                 <ul>
                     <li>
-                        <a href="#" id="methDelivOrd">Как забрать товар?</a>
+                        <a href="#" id="methDelivOrd">Как получить товар?</a>
                     </li>
                     <li>
                         <a href="#" id="arranOrd">Как оформить заказ?</a>
@@ -148,7 +148,7 @@ export const objOfGroupForBinding = {
                 <nav id="help">
                     <ul>
                         <li>
-                            <a href="#" id="methDelivOrd">Как забрать товар?</a>
+                            <a href="#" id="methDelivOrd">Как получить товар?</a>
                         </li>
                         <li>
                             <a href="#" id="arranOrd">Как оформить заказ?</a>

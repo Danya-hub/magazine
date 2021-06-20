@@ -20,12 +20,15 @@
 }
 
 .pageDelivery table {
-    display: flex;
     border-collapse: collapse;
-    margin: 0 auto; 
+}
+
+.pageDelivery table tr:first-child td {
+    vertical-align: middle;
 }
 
 .pageDelivery table tr td {
+    vertical-align: unset;
     border-left: 1px solid;
     border-top: 2px solid;
     width: 100vw;

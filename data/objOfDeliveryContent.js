@@ -148,13 +148,14 @@ export const objOfDeliveryContent = {
         </ul>
     `,
     costOrd: `
+        <h1>Сколько стоит доставка?</h1>
         <table>
             <tr>
                 <td>
-                    <h3>Способ оплаты:</h3>
+                    <h3>Способ доставки:</h3>
                 </td>
                 <td>
-                    <h3>Город:</h3>
+                    <h3>Место:</h3>
                 </td>
                 <td>
                     <h3>Цены:</h3>
@@ -168,7 +169,7 @@ export const objOfDeliveryContent = {
                     <span>***</span>
                 </td>
                 <td>
-                    <span>мин. 50 грн.</span>
+                    <span>от 50 грн.</span>
                 </td>
             </tr>
             <tr>
@@ -196,7 +197,7 @@ export const objOfDeliveryContent = {
                     </ul>
                 </td>
             </tr>
-        </table>  
+        </table>   
     `,
     metPayOrd: `
         <h1>Способы оплаты:</h1>
