@@ -137,7 +137,7 @@ export const objOfGroupForBinding = {
                         <a href="#" id="metPayOrd">Какими способами можно оплатить товар?</a>
                     </li>
                     <li>
-                        <a href="#" id="chSendOrd">Проверка отправлений</a>
+                        <a href="#" id="timeReceipOrd">Когда я получу свой заказ?</a>
                     </li>
                 </ul>
             </nav>
@@ -160,7 +160,7 @@ export const objOfGroupForBinding = {
                             <a href="#" id="metPayOrd">Какими способами можно оплатить товар?</a>
                         </li>
                         <li>
-                            <a href="#" id="chSendOrd">Проверка отправлений</a>
+                            <a href="#" id="timeReceipOrd">Когда я получу свой заказ?</a>
                         </li>
                     </ul>
                 </nav>

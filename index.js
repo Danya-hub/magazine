@@ -13,10 +13,10 @@ import {
 } from "./data/objOfDeliveryContent.js";
 
 //* ------------ header ------------
-import basket from "./js/header/topFunctions/basket.js";
-import navigation from "./js/header/topFunctions/navigation.js";
-import filter from "./js/header/filter/filter.js";
-import header from "./js/header/header.js";
+import basket from "@header/topFunctions/basket.js";
+import navigation from "@header/topFunctions/navigation.js";
+import filter from "@header/filter/filter.js";
+import header from "@header/header.js";
 
 //* ------------ main ------------
 import actionSlider from "./js/main/slider/actionSlider.js";

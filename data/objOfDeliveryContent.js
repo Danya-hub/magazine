@@ -200,7 +200,7 @@ export const objOfDeliveryContent = {
         </table>   
     `,
     metPayOrd: `
-        <h1>Способы оплаты:</h1>
+        <h1>Какими способами можно оплатить товар?</h1>
         <div class="cardContent">
             <div class="card">
                 <div class="image">
@@ -222,4 +222,19 @@ export const objOfDeliveryContent = {
             </div>
         </div>
     `, 
+    timeReceipOrd: `
+        <h1>Когда я получу свой заказ?</h1>
+        <p>Срок доставки определяется при заказе на сайте, 
+            но может зависеть от графика доставки в ваш регион 
+            компании «Новая почта».</p>
+        <p>Если вы оплачиваете заказ по безналичному расчету, 
+            то срок доставки может отличаться от указанных на 
+            сайте о данный термин можно узнать у нашего 
+            менеджера в момент оформления заказа.</p>
+        <div class="cardContent">
+            <div class="card">
+                <img src="https://i.postimg.cc/yYZ0LLnX/Nova-Poshta-2014-logo-svg.png" alt="postOffice">
+            </div>
+        </div>
+    `,
 }

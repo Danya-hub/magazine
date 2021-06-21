@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "commonJS",
+        "baseUrl": "./",
+        "paths": {
+            "@header/*": ["./js/header/*"]
+        }
+    }
+}
