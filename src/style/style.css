@@ -1,26 +1,26 @@
 /* * ------------ sidePanel ------------ */
-@import url("./style/sidePanel/sidePanelComp.css");
-@import url("./style/sidePanel/sidePanelMob.css");
+@import url("./components/sidePanel/sidePanelComp.css");
+@import url("./components/sidePanel/sidePanelMob.css");
 
 /* * ------------ header ------------ */
-@import url("./style/header/basket.css");
-@import url("./style/header/topPanel.css");
-@import url("./style/header/header.css");
-@import url("./style/header/filter.css");
+@import url("./components/header/basket.css");
+@import url("./components/header/topPanel.css");
+@import url("./components/header/header.css");
+@import url("./components/header/filter.css");
 
 /* * ------------ main ------------ */
-@import url("./style/main/discounts.css");
-@import url("./style/main/comics.css");
-@import url("./style/main/delivery.css");
-@import url("./style/main/description.css");
-@import url("./style/main/cardContent.css");
+@import url("./components/main/discounts.css");
+@import url("./components/main/comics.css");
+@import url("./components/main/delivery.css");
+@import url("./components/main/description.css");
+@import url("./components/main/cardContent.css");
 
 /* * ------------ footer ------------ */
-@import url("./style/footer/footer.css");
+@import url("./components/footer/footer.css");
 
 /* * ------------ common ------------ */
-@import url("./style/common/fonts.css");
-@import url("./style/common/media.css");
+@import url("./common/fonts.css");
+@import url("./common/media.css");
 
 html {
     scroll-behavior: smooth;
